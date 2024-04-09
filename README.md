@@ -5,7 +5,7 @@ Once installed it should be possible to run it from the menu-bar: Workspace -> S
 ### Shorthand of what this does:
 1. It gets info about the current project.
 2. Finds the active timeline, then renders that timeline in the specified format: current version is in XDDCAM MPEG 2, but thats easy to change.
-3. Once the file is done rendering the script will upload to the specified FTP-server using a password and username. Both encoded as base64.
+3. Once the file is done rendering the script will upload to the specified FTP-server using a password and username. Both encoded as base64. You need to update the script with your info here, or the script will fail.
 4. Upload progress can be tracked if you open the DaVinci Resolve console: Workspace -> Console.
 
 ## Install location for the Python Script:
