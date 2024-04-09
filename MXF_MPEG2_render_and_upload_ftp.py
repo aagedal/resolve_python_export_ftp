@@ -1,4 +1,5 @@
-# If you have the Mac App Store version of DaVinci Resolve, place ~/Library/Containers/com.blackmagic-design.DaVinciResolveAppStore/Data/Library/Application\ Support/Fusion/Scripts/Deliver/
+# If you have the Mac App Store version of DaVinci Resolve, place the file at:
+# ~/Library/Containers/com.blackmagic-design.DaVinciResolveAppStore/Data/Library/Application\ Support/Fusion/Scripts/Deliver/
 
 print("Script starting: XDCAM render export + FTP upload.")
 
@@ -84,7 +85,7 @@ while percentage < 100:
 
     percentage = jobStatus.get("CompletionPercentage")
     print("Rendering is " + str(percentage) + "%" + " complete.")
-    time.sleep(2) #This should reduce performance cost. Also the API doesn't seem update as often as the GUI, so its just a waste of recsources to do it as fast as possible.
+    time.sleep(2) #This should reduce performance cost. Also the API doesn't seem update as often as the GUI, so its just a waste of resources to do it as fast as possible.
     
 
 # Confirmation of Render completion
@@ -125,7 +126,8 @@ print("Ready for FTP Upload!")
 import base64
 import ftplib
 
-# FTP Session Data as Base64 - to avoid storting passwords as clear text. This still isn't quite safe, but it is slightly better than storing login info as clear text.
+# FTP Session Data as Base64 - to avoid storting passwords as clear text.
+# This still isn't quite safe, but it is slightly better than storing login info as clear text.
 FTP_U = " insert your username encoded as base 64 "
 FTP_P = " insert your password encoded as base 64 "
 FTP_S = " insert your ftp-server address / IP encoded as base 64 here "
