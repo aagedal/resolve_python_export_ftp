@@ -14,3 +14,4 @@ Once installed it should be possible to run it from the menu-bar: Workspace -> S
 ~/Library/Containers/com.blackmagic-design.DaVinciResolveAppStore/Data/Library/Application\ Support/Fusion/Scripts/Deliver/
 
 ### Blackmagic installer version:
+~/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Deliver/
